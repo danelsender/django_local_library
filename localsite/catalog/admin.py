@@ -20,7 +20,7 @@ admin.site.register(Genre)
 # Define the admin class
 class BookInstanceAdmin(admin.ModelAdmin):
    list_display = ('book', 'status', 'due_back', 'id')
-   list_filter = ('status', 'due_back')
+   list_filter = ('status', 'imprint')
    fieldsets = (
       (None, {
          'fields': ('book', 'imprint', 'id')
