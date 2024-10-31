@@ -51,3 +51,7 @@ urlpatterns += [
 # urlpatterns += [
 #     path('accounts/', include('django.contrib.auth.urls')),
 # ]
+
+urlpatterns += [
+    path('catalog/', include('catalog.urls')),
+]
